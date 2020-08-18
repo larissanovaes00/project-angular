@@ -17,10 +17,23 @@
                 <td>{{product.id}}</td>
                 <td>{{product.name}}</td>
                 <td>{{product.description}}</td>
-                <td>{{product.quantity}}</td>
+                <td>{{product.price}}</td>
                 <td>
-                    <!-- <button type="button" [routerLink]="['/product/update/', product.id]">Update</button>
-                    <button type="button" (click)="productService.delete(product.id)">Remove</button> -->
+                    <select (change)="onChange(product, $event.target.value)">
+                        <option *ngFor="let number of [1,2,3,4]">{{ number }}</option>
+                    </select>
+
+                    <!-- <select name="" id="">
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+                        <option value="1">5</option>
+                        <option value="1">6</option>
+                    </select> -->
+                </td>
+                <td>
+                    <button type="button" (click)="deleteProduct(product.id)">Remove</button>
                 </td>
             </tr>
         </tbody>

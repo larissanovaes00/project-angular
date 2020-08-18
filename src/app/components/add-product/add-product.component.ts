@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
+import { CommonService } from 'src/app/services/common.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-product',
@@ -7,9 +10,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddProductComponent implements OnInit {
 
-  constructor() { }
+    productForm: FormGroup;
+
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+    private commonService: CommonService
+    ) { }
 
   ngOnInit(): void {
+    this.productForm = this.fb.group({
+        name: [''],
+        description: [''],
+        price: [''],
+        quantity: [''],    
+      })
   }
 
+  submitForm() {
+    this.commonService.create(this.productForm.value).subscribe(res => {
+      console.log('Product created!')
+      this.router.navigateByUrl('produtos')
+    })
+
+  }
 }

@@ -50,7 +50,7 @@ export class CommonService {
         )
     }
 
-    delete(id) {
+    delete(id): Observable<any> {
         return this.httpClient.delete<Product>(this.apiServer + '/products/' + id, this.httpOptions)
         .pipe(
             catchError(this.errorHandler)

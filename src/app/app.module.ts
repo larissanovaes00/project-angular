@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { RoutingModule } from 'angular-routing';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -22,15 +22,15 @@ import { HomeComponent } from './components/home/home.component';
     EditProductComponent,
     DetailProductComponent,
     ProductsComponent,
-    HomeComponent,
-    // ReactiveFormsModule
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RoutingModule.forRoot(),
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
