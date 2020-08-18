@@ -44,7 +44,8 @@ export class ProductsComponent implements OnInit {
     }
 
     calculateTotal() {
-        return this.total = this.products.reduce((sum, current) => sum += (current.price), 0);
+        return this.total = this.products.reduce((sum, current) => sum + current.price, 0);
+        
     }
-    
+
 }
