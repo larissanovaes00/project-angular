@@ -44,7 +44,7 @@ export class CommonService {
     }
 
     update(id, product): Observable<Product> {
-        return this.httpClient.put<Product>(this.apiServer + '/products/' + id, JSON.stringify(product), this.httpOptions)
+        return this.httpClient.put<Product>(this.apiServer + '/products/' + id, product, this.httpOptions)
         .pipe(
             catchError(this.errorHandler)
         )

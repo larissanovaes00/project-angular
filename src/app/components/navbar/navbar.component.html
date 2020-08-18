@@ -1,3 +1,9 @@
-<p *ngFor="let post of posts">
-   {{ post.title }}
-</p>
+<nav class="navbar navbar-light bg-light">
+   <div class="container">
+      <a class="navbar-brand">Navbar</a>
+      <div>
+         <button class="btn btn-sm btn-light mr-2"routerLink="/produtos" routerLinkActive="active">Produtos</button>
+         <button class="btn btn-sm btn-primary" routerLink="/produto-novo" routerLinkActive="active">Adidionar Produto</button>
+      </div>
+   </div>
+ </nav>
