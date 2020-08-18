@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "cadeira",
+      "description": "No meu xinélo da humildade eu gostaria muito de ver o Neymar e o Ganso. Por que eu acho que.... 11 entre 10 brasileiros gostariam.",
+      "price": 10.99,
+      "quantity": 1
+    },
+    {
+      "id": 2,
+      "name": "mesa",
+      "description": " Você veja, eu já vi, parei de ver. Voltei a ver, e acho que o Neymar e o Ganso têm essa capacidade de fazer a gente olhar.",
+      "price": 10.99,
+      "quantity": 1
+    },
+    {
+      "id": 3,
+      "name": "colher",
+      "description": "No meu xinélo da humildade eu gostaria muito de ver o Neymar e o Ganso. Por que eu acho que.... 11 entre 10 brasileiros gostariam.",
+      "price": 10.99,
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "name": "abajur",
+      "description": " Você veja, eu já vi, parei de ver. Voltei a ver, e acho que o Neymar e o Ganso têm essa capacidade de fazer a gente olhar.",
+      "price": 10.99,
+      "quantity": 1
+    }
+  ]
+}
